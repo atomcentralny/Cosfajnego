@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wspólnota "Jestem, który Jestem"</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+            text-align: center;
+            color: #2c3e50;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 40px;
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .section {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .image-container {
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .quote {
+            font-size: 20px;
+            font-style: italic;
+            margin: 20px 0;
+            animation: fadeIn 3s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .countdown {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .quote-container {
+            margin: 20px 0;
+        }
+        .quote-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .quote-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wspólnota Odnowy w Duchu Świętym</h1>
+        <h2>"Jestem, który Jestem"</h2>
+    </header>
+    
+    <div class="container">
+        <div class="image-container">
+            <img src="coscos.png" alt="Logo wspólnoty">
+        </div>
+        
+        <div class="quote-container">
+            <div class="quote" id="random-quote">„Gdzie dwóch albo trzech gromadzi się w imię moje, tam jestem pośród nich.” (Mt 18,20)</div>
+            <button class="quote-button" onclick="generateQuote()">Wygeneruj cytat</button>
+        </div>
+        
+        <div class="section">
+            <h2>O Nas</h2>
+            <p>Jesteśmy wspólnotą ludzi pragnących wzrastać w wierze i doświadczać obecności Ducha Świętego w codziennym życiu.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Najbliższe spotkanie za:</h2>
+            <div class="countdown" id="countdown"></div>
+        </div>
+        
+        <div class="section">
+            <h2>Spotkania</h2>
+            <p>Zapraszamy na nasze spotkania modlitewne w każdą środę o 19:00 w Starej Kaplicy przy Kościele Kazimierza Królewicza w Suwałkach.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <img src="FB_IMG_1743064019755.jpg" alt="Zdjęcie z wydarzenia">
+                <img src="IMG-20240729-WA0020.jpg" alt="Zdjęcie z wydarzenia">
+                <img src="IMG-20240702-WA0006.jpg" alt="Zdjęcie z wydarzenia">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Teksty Pieśni Uwielbieniowych</h2>
+            <p>Na stronie <a href="https://uwielbiaj.pl" target="_blank">uwielbiaj.pl</a> znajdziesz teksty pieśni uwielbieniowych, które możesz śpiewać podczas modlitwy i spotkań wspólnotowych.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Kontakt</h2>
+            <p>Email: <a href="mailto:zespol@uwielbiaj.com">zespol@uwielbiaj.com</a></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Wspólnota "Jestem, który Jestem". Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
